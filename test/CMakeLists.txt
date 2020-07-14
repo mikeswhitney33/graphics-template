@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(test_initialization test_init.c)
