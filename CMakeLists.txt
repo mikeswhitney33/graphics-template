@@ -8,6 +8,9 @@ INCLUDE_DIRECTORIES(stb)
 
 LINK_LIBRARIES(assimp glad glfw glm)
 
+ENABLE_TESTING()
+ADD_SUBDIRECTORY(test)
+
 #### vvvv Add subdirectory of project here vvvv ####
 
 

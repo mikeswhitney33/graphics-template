@@ -1,1 +1,2 @@
 ADD_EXECUTABLE(test_initialization test_init.c)
+ADD_TEST(NAME test_init COMMAND test_initialization)
