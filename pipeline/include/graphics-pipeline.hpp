@@ -29,6 +29,8 @@ protected:
     virtual void takedown();
     virtual void update(double delta_time);
     virtual void draw();
+
+    float get_aspect() const;
 private:
     std::string title;
     int screen_width, screen_height;
