@@ -19,6 +19,8 @@ void Input::on_mouse_move(double xpos, double ypos)
     if(pipeline != nullptr) {
         pipeline->on_mouse_move(xpos, ypos);
     }
+    mousex = xpos;
+    mousey = ypos;
 }
 
 void Input::on_left_mouse_down()
@@ -96,4 +98,14 @@ Input::Input()
 
 Input::~Input()
 {}
+
+double Input::getMouseX() const
+{
+    return mousex;
+}
+
+double Input::getMouseY() const
+{
+    return mousey;
+}
 

@@ -36,9 +36,14 @@ void mousebutton_callback(GLFWwindow * window, int button, int action, int mods)
 }
 
 GraphicsPipeline::GraphicsPipeline(const std::string & title, int screen_width, int screen_height)
-:title(title), screen_width(screen_width), screen_height(screen_height), aspect(screen_width/screen_height), window(nullptr)
+:title(title), screen_width(screen_width), screen_height(screen_height), aspect((float)screen_width/(float)screen_height), window(nullptr)
 {
 
+}
+
+float GraphicsPipeline::get_aspect() const
+{
+    return aspect;
 }
 
 GraphicsPipeline::~GraphicsPipeline()
