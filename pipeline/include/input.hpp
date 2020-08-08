@@ -19,6 +19,8 @@ public:
     bool isLeftMouseDown() const;
     bool isRightMouseDown() const;
     bool isKeyDown(int key) const;
+    double getMouseX() const;
+    double getMouseY() const;
 private:
     static Input * instance;
     GraphicsPipeline * pipeline;
@@ -28,6 +30,7 @@ private:
     bool leftMouseDown;
     bool rightMouseDown;
     std::map<int, bool>keymap;
+    double mousex, mousey;
 };
 
 #endif // INPUT_HPP

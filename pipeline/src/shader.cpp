@@ -104,3 +104,16 @@ std::string Shader::shadertype_string(unsigned int type) const
     }
 }
 
+
+void Shader::setFloat(const char * name, float value) const
+{
+    glUniform1f(glGetUniformLocation(program, name), value);
+}
+void Shader::setVec3(const char * name, const glm::vec3 & value) const
+{
+    glUniform3f(glGetUniformLocation(program, name), value.x, value.y, value.z);
+}
+void Shader::setMat4(const char * name, const glm::mat4 & value) const
+{
+    glUniformMatrix4fv(glGetUniformLocation(program, name), 1, false, &value[0][0]);
+}
