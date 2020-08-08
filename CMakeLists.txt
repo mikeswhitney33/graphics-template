@@ -1,6 +1,11 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
+
+
 PROJECT(graphics-template)
+
+SET(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 ADD_SUBDIRECTORY(assimp)
 ADD_SUBDIRECTORY(glad)
@@ -16,7 +21,7 @@ LINK_LIBRARIES(pipeline)
 #### vvvv Add subdirectory of project here vvvv ####
 
 
-
+ADD_SUBDIRECTORY(fluid)
 
 #### ^^^^ Add subdirectory of project here ^^^^ ####
 
