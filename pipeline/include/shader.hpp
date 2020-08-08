@@ -32,6 +32,7 @@ public:
     void setFloat(const char * name, float value) const;
     void setVec3(const char * name, const glm::vec3 & value) const;
     void setMat4(const char * name, const glm::mat4 & value) const;
+    void setVec2(const char * name, const glm::vec2 & value) const;
 protected:
 
 private:

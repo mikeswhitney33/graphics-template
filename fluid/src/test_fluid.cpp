@@ -1,8 +1,8 @@
-#include "maths.hpp"
+#include "fluid-solver.hpp"
 
 int main()
 {
-    srand(0);
     FluidSolver solver;
     solver.run();
+    return 0;
 }
